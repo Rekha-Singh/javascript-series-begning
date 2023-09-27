@@ -3,12 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <title>Dom</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: aqua;
+        }
+        #title{
+            color: blueviolet;
+        }
+    </style>
 </head>
-<body>
-    <div class="bg-black">
-        <h1 class="Heading">DOM LEARN FROM CHAI OR CODE</h1>
+<body class="bg-black">
+    <div >
+        <h3 id="title" class="Heading">DOM LEARN FROM CHAI OR CODE <span style="display: none;">Test hone bala he </span></h3>
         <p>Lorem ipsum dolor sit amet.</p>
+        <h2>Lorem ipsum dolor sit amet consectetu vitae corporis dolores architecto officiis? Soluta quisquam repellat adipisci veniam. Mollitia quos hic, distinctio per
+            ferendis alias at magnam perspiciatis aperiam!</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt.</h3>
+            <input type="password" name="" id="">
+
+            <ul>
+                <li class="f4">one</li>
+                <li class="f3">Two</li>
+                <li class="f3">Three</li>
+                <li class="f4">Four</li>
+            </ul>
 
     </div>
 </body>
 </html>
+
+
+/*
+const myH1=document.querySelectorAll('h2')
+undefined
+myH1
+NodeList [h2]0: h2length: 1[[Prototype]]: NodeListentries: ƒ entries()forEach: ƒ forEach()item: ƒ item()keys: ƒ keys()length: (...)values: ƒ values()constructor: ƒ NodeList()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "NodeList"get length: ƒ length()[[Prototype]]: Object
+myH1[0].style.color='purple'
+'purple'
+const myh2=document.querySelectorAll('h3')
+undefined
+myh2
+NodeList(3) [h3#title.Heading, h3, h3]0: h3#title.Heading1: h32: h3length: 3[[Prototype]]: NodeList
+myh2[1].style.backgroundColor='red'
+'red'
+
+
+=================loops use in dom manupolation====================
+
+tempList.forEach( function (li) {
+    li.style.backgroundColor="Yellow"
+})
+undefined
+myH1.forEach((items)=>{
+    items.style.color="green"
+})
+undefined
+myH1.forEach((items)=>{
+    items.style.backgroundColor="blue"
+})
+
+============================document.getElementByClassName()=======================
+document.getElementsByClassName('f3')
+HTMLCollection(2) [li.f3, li.f3]0: li.f31: li.f3length: 2[[Prototype]]: HTMLCollection
+const temClassList=document.getElementsByClassName('f3')
+undefined
+temClassList.forEach( (item)=>{
+    console.log(item)
+})
+VM4317:1 Uncaught TypeError: temClassList.forEach is not a function
+    at <anonymous>:1:14
+(anonymous) @ VM4317:1
+temClassList
+HTMLCollection(2) [li.f3, li.f3]
+Array.from(temClassList)
+(2) [li.f3, li.f3]0: li.f31: li.f3length: 2[[Prototype]]: Array(0)at: ƒ at()concat: ƒ concat()constructor: ƒ Array()copyWithin: ƒ copyWithin()entries: ƒ entries()every: ƒ every()fill: ƒ fill()filter: ƒ filter()find: ƒ find()findIndex: ƒ findIndex()findLast: ƒ findLast()findLastIndex: ƒ findLastIndex()flat: ƒ flat()flatMap: ƒ flatMap()forEach: ƒ forEach()includes: ƒ includes()indexOf: ƒ indexOf()join: ƒ join()keys: ƒ keys()lastIndexOf: ƒ lastIndexOf()length: 0map: ƒ map()pop: ƒ pop()push: ƒ push()reduce: ƒ reduce()reduceRight: ƒ reduceRight()reverse: ƒ reverse()shift: ƒ shift()slice: ƒ slice()some: ƒ some()sort: ƒ sort()splice: ƒ splice()toLocaleString: ƒ toLocaleString()toReversed: ƒ toReversed()toSorted: ƒ toSorted()toSpliced: ƒ toSpliced()toString: ƒ toString()unshift: ƒ unshift()values: ƒ values()with: ƒ with()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.unscopables): {at: true, copyWithin: true, entries: true, fill: true, find: true, …}[[Prototype]]: Object
+const myconVetedList=Array.from(temClassList)
+undefined
+myconVetedList.forEach( (item)=>{
+    console.log(item)
+})
+VM4837:2 <li class=​"f3">​…​</li>​
+VM4837:2 <li class=​"f3">​…​</li>​
+undefined
+myconVetedList[0].style.color='green'
+'green'
+
+====================google page===================
+
+document.getElementsByClassName('GyAeWb')
+HTMLCollection [div#rcnt.GyAeWb, rcnt: div#rcnt.GyAeWb]
+ar
+VM487:1 Uncaught ReferenceError: ar is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM487:1
+Array.from(document.getElementsByClassName('GyAeWb'))
+[div#rcnt.GyAeWb]
+const myex=Array.from(document.getElementsByClassName('GyAeWb'))
+undefined
+myex.forEach( (items)=>{
+    items.style.color='blue'
+})
+undefined
+myex.forEach( (items)=>{
+    items.style.color='yellow'
+})
+
+*/

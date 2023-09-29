@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body style="background-color: rgb(118, 183, 193); color:brown">
+    <ul class="language">
+        <li>JavaScript</li>
+        <li>Html</li>
+    </ul>
+</body>
+<script>
+    function addLang(lang_Name){
+        let li = document.createElement('li');
+        li.innerHTML=`${lang_Name}`;
+        document.querySelector('.language').appendChild(li);
+    }
+    // addLang("python")
+    // addLang('Java');
+
+    // ==============good approach========================
+
+    function addLangOptimize(lang_Name){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(lang_Name));
+        document.querySelector(".language").appendChild(li);
+    }
+    addLangOptimize("c++");
+
+    // =====================edit elements====================
+
+    // const ed=document.querySelector("li:nth-child(0)");
+    // // ed.innerHTML="mojo"
+    // console.log(ed);
+
+
+    /////////=create
+
+    // const newli=document.createElement('li');
+    // newli.textContent="mojo";
+    // ed.replaceWith(newli);
+
+    const first_lang=document.querySelector("li:first-child")
+    first_lang.outerHTML='<li>typescript</li>'
+
+    // =================remove==================
+
+    const removelang=document.querySelector("li:last-child")
+    removelang.remove();
+
+
+</script>
+</html>

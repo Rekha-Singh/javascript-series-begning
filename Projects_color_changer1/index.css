@@ -1,0 +1,57 @@
+.canvas{
+    margin: 100px auto 100px;
+    width: 80%;
+    text-align: center;
+ }
+ 
+ nav{
+     margin: 15px;
+     /* flex: grid; */
+ }
+ 
+ #n1,#n2{
+     width: 120px;
+     border: solid 1.5px black;
+     background-color: aliceblue;
+     text-align: center;
+     text-decoration: none;
+     padding: 3px;
+     margin: 2px;
+     border-radius: 3px;
+ }
+ 
+ span{
+     display: block;
+ }
+ html{
+     margin: 0;
+ }
+ .button{
+     width: 100px;
+     height: 100px;
+     border: solid black 2px;
+     display: inline-block;
+ }
+ 
+ #grey {
+     background: grey;
+   }
+   
+   #white {
+     background: white;
+   }
+   #blue {
+     background: blue;
+   }
+   #yellow {
+     background: yellow;
+   }
+   #purple{
+     background-color: purple;
+   }
+   #green{
+     background-color: green;
+   }
+   #pink{
+     background-color: pink;
+   }
